@@ -70,11 +70,11 @@ export default function App() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white p-4">
+    <div className="flex flex-col items-start justify-center min-h-screen bg-gray-900 text-white p-4">
       <h1 className="text-3xl font-bold mb-4">Image & PDF Markup App</h1>
       <p>Press T to switch between images</p>
       <UploadButtons onUpload={handleImageUpload} />
-      <div className="mt-4 w-full max-w-4xl">
+      <div className="mt-4 w-full">
         {images[currentIndex].length > 0 ? (
           <ImageCanvas imageSrcArray={images[currentIndex]} />
         ) : (
